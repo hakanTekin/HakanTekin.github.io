@@ -3,10 +3,9 @@ body {
     margin-left: 40px;
     /*background: -webkit-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
     animation: gradient 15s ease-in infinite;*/
-    background-repeat: no-repeat;
-    background-size: 5000% 5000%;
-    background: linear-gradient(-45deg, #c5a240, #6a98be, hsl(207, 50%, 56%));
-    animation: gradient 1000s linear infinite;
+    background: linear-gradient(-45deg, #ee8363, #1e89b1, #1eb491);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     color: white
 }
 
@@ -90,8 +89,8 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.61);
     /* this adds the "card" effect */
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
     margin: 20px;
     display: table;
@@ -111,7 +110,7 @@ body {
     border-radius: 10px;
     margin: 40px;
     display: table;
-    opacity: 60%;
+    opacity: 80%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -144,6 +143,7 @@ body {
     color: white;
     opacity: 0%;
     transition: 300ms ease-in-out;
+    pointer-events: none;
 }
 
 .cardCover {
