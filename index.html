@@ -6,25 +6,27 @@
         <div id=title>
             <h1>Hakan Ahmet Tekin</h1>
             <h2>Computer Engineering Student</h2>
-            <a style="font-size:large; color: white;" href="mailto: hakan.ahmet.tekin@gmail.com">hakan.ahmet.tekin@gmail.com</a>
             <div id=socialMedias>
                 <input id=github type="image" src="images\GitHubLogo.png"></button>
                 <input id=linkedIn type="image" src="images\LinkedInLogo.png"></button>
+                <input id=gmail type="image" src="images/GmailLogopng.png"></button>
             </div>
         </div>
     </div>
     <div id=aboutMe>
         <section id=projects style="text-align: center;">
-            <h2>Projects</h2>
+            <div class="sectionHeader">
+                <h2>Projects</h2>
+            </div>
             <!--Cards-->
             <div class="row">
                 <!--CityScape-->
-                <div class="card-large">
+                <div class="card-large" id="cityscape">
                     <video class=" videoContainer " muted loop>
-                        <source src="videos/VladimirMariovskyVideo.mp4 ">
+                        <source src="videos/VladimirMariovskyVideo.mp4">
                             Video is not supported
                     </video>
-                    <div class="cardCoverLarge " id=vlmedia>
+                    <div class="cardCoverLarge ">
                         <p class="cardTitle "><b>CityScape</b></p>
                         <p class="cardSubtitle ">
                             <p>June 2020</p>
@@ -38,12 +40,12 @@
                     </div>
                 </div>
                 <!--Mariovsky-->
-                <div class="card-large">
+                <div class="card-large" id="mariovsky">
                     <video class="videoContainer " muted loop>
                         <source src="videos/VladimirMariovskyVideo.mp4 ">
                             Video is not supported
                     </video>
-                    <div class="cardCoverLarge " id=vlmedia>
+                    <div class="cardCoverLarge ">
                         <p class="cardTitle "><b>Vladimir Mariovsky</b></p>
                         <p class="cardSubtitle ">
                             <p>February 2019</p>
@@ -59,60 +61,69 @@
                 </div>
             </div>
         </section>
+
         <section id=jobexperience>
-            <h2 style="text-align: center; ">Job Experience</h2>
+            <div class="sectionHeader">
+                <h2>Job Experience</h2>
+            </div>
+            <div class="row">
+                <div id="vlmedia" class="card" style="float: left; color:black; padding: 20px;opacity: 100%;">
+                    <h3>VLMedia - Internship</h3>
 
-            <div class="row ">
+                    <div><b>July - September 2019 (2 months)</b><br>Mobile App Development
+                        <div>
+                            <h4>Technologies Used</h4>
+                            <ul>
+                                <li>Flutter</li>
+                                <li>SQLite</li>
+                                <li>Firebase Cloud Messaging</li>
+                            </ul>
+                        </div>
 
-                <!--Cards-->
-                <div class="card " style="background-image: url( 'images/VLMediaLogo.png'); ">
-                    <div class="cardCover " id=vlmedia>
-                        <p class="cardTitle "><b>VLMedia</b></p>
-
-                        <p class="cardSubtitle ">
-                            <p>Intern</p>
-                            <p>July - September 2019<br>(2 months)</p>
-                            <p>Mobile App Development:<br>Flutter, JavaScript, SQL</p>
+                        <div>
+                            <h4>Concepts Learned</h4>
+                            <ul>
+                                <li>Cross-Platform Mobile App Development</li>
+                                <li>REST API's</li>
+                                <li>Local Databases</li>
+                                <li>App Caching</li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
 
-                <div class="card " style="background-image: url( 'images/TEDUlogoEn.gif') ">
-                    <div class="cardCover " id=vlmedia>
-                        <p class="cardTitle "><b>TED University</b></p>
-                        <p class="cardSubtitle ">
-                            <p>IT Assistant</p>
-                            <p>
-                                October 2018 - June 2019<br>(9 months)
-                            </p>
-                        </p>
+                <div id="TEDU" class="card" style="color:black; padding: 20px;opacity: 100%;">
+
+                    <h3>TED University - Part-Time</h3>
+                    <div>
+                        <b>October 2018 - June 2019 (9 months)</b><br>IT Assistant<br>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-        <section id=school>
-            <h2 style=" text-align: center; ">Education</h2>
-            <div class="row ">
-                <!--Cards-->
-                <div class="card " style="background-image: url( 'images/TEDUlogoEn.gif') ">
-                    <div class="cardCover " id=vlmedia>
-                        <p class="cardTitle "><b>TED University</b></p>
-                        <p class="cardSubtitle ">
-                            <p>
-                                September 2017 - June 2021(Estimated)
-                            </p>
-                            <p>
-                                Computer Engineering<br> CGPA : 3.27 / 4.00<br>
-                            </p>
+    </div>
+    </section>
+    <section id=school>
+        <div class=" sectionHeader ">
+            <h2>Education</h2>
+        </div>
+        <div class="row ">
+            <!--Cards-->
+            <div class="card " style="background-image: url( 'images/TEDUlogoEn.gif') ">
+                <div class="cardCover " id=vlmedia>
+                    <p class="cardTitle "><b>TED University</b></p>
+                    <p class="cardSubtitle ">
+                        <p>
+                            September 2017 - June 2021(Estimated)
                         </p>
-                    </div>
+                        <p>
+                            Computer Engineering<br> CGPA : 3.27 / 4.00<br>
+                        </p>
+                    </p>
                 </div>
-
-            </div>
-
-        </section>
+    </section>
+    </div>
+    </div>
     </div>
 </body>
 

@@ -1,185 +1,179 @@
-body {
-    margin-right: 40px;
-    margin-left: 40px;
-    /*background: -webkit-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+    body {
+        /*background: -webkit-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
     animation: gradient 15s ease-in infinite;*/
-    background: linear-gradient(-45deg, #ee8363, #1e89b1, #1eb491);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    color: white
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+        background: linear-gradient(180deg, );
+        animation: gradient 15s ease infinite;
+        color: white;
+        margin: 0px;
     }
-    50% {
-        background-position: 100% 50%;
+    
+    .sectionHeader {
+        background: linear-gradient(90deg, #111111, #444444);
+        display: inline-grid;
+        color: white;
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        text-align: center;
+        font-size: x-large;
     }
-    100% {
-        background-position: 0% 50%;
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
-}
-
-#linkedIn,
-#github {
-    max-width: 52px;
-    max-height: auto;
-    margin-right: 13px;
-    margin-left: 13px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-}
-
-#linkedIn:hover,
-#github:hover {
-    transform: scale(1.1, 1.1);
-    transition: 500ms;
-}
-
-#school {
-    text-align: left;
-    border-style: none;
-    border-width: 10px;
-    padding: 10px;
-    /*background: repeating-linear-gradient(45deg, #85bfee, rgb(7, 243, 231))*/
-}
-
-#TEDU {
-    border-style: none;
-    border-color: rgb(255, 255, 255);
-    justify-content: left;
-    align-items: center;
-    border-width: 5px;
-}
-
-
-/*Card Wiew Taken from www.w3schools.com
+    
+    #linkedIn,
+    #github,
+    #gmail {
+        max-width: 52px;
+        max-height: auto;
+        margin-right: 13px;
+        margin-left: 13px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    
+    #linkedIn:hover,
+    #github:hover,
+    #gmail:hover {
+        transform: scale(1.2, 1.2);
+        transition: 500ms;
+    }
+    /*Card Wiew Taken from www.w3schools.com
 /* Float four columns side by side */
-
-.videoContainer {
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    object-fit: fill;
-    overflow: hidden;
-    display: block;
-}
-
-.column {
-    float: right;
-    width: 300px;
-    padding: 0 10px;
-    justify-content: center;
-}
-
-
-/* Remove extra left and right margins, due to padding in columns */
-
-.row {
-    margin: 0 -5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-/* Style the counter cards */
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.61);
-    /* this adds the "card" effect */
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-    margin: 20px;
-    display: table;
-    opacity: 50%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: 300ms ease-in-out;
-    background-color: white;
-}
-
-.card-large {
-    box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.61);
-    /* this adds the "card" effect */
-    height: 250px;
-    width: 500px;
-    border-radius: 10px;
-    margin: 40px;
-    display: table;
-    opacity: 80%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: 300ms ease-in-out;
-    background-color: white;
-}
-
-.card-large:hover {
-    opacity: 100%;
-    transform: scale(1.2);
-    transition: 300ms ease-in-out;
-}
-
-.card:hover {
-    opacity: 100%;
-    transform: scale(1.2);
-    transition: 300ms ease-in-out;
-}
-
-.cardCoverLarge {
-    position: absolute;
-    vertical-align: middle;
-    top: 0%;
-    width: inherit;
-    height: inherit;
-    vertical-align: middle;
-    background: linear-gradient(45deg, rgba(132, 133, 134, 0.800), rgba(60, 65, 71, 0.800));
-    border-radius: inherit;
-    visibility: hidden;
-    color: white;
-    opacity: 0%;
-    transition: 300ms ease-in-out;
-    pointer-events: none;
-}
-
-.cardCover {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    background: linear-gradient(45deg, rgba(132, 133, 134, 0.95), rgba(60, 65, 71, 0.95));
-    border-radius: inherit;
-    visibility: hidden;
-    color: white;
-    opacity: 0%;
-    transition: 300ms ease-in-out;
-}
-
-.card-large:hover>.cardCoverLarge {
-    transition: 300ms ease-in-out;
-    visibility: visible;
-    opacity: 100%;
-}
-
-.card:hover>.cardCover {
-    transition: 300ms ease-in-out;
-    visibility: visible;
-    opacity: 100%;
-}
-
-
-/* Responsive columns - one column layout (vertical) on small screens */
-
-@media screen and (max-width: 600px) {
-    .column {
+    
+    .videoContainer {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        object-fit: fill;
+        overflow: hidden;
         display: block;
-        margin-bottom: 20px;
     }
-}
-
-section {
-    padding-bottom: 100px;
-}
+    
+    .column {
+        float: right;
+        width: 300px;
+        padding: 0 10px;
+        justify-content: center;
+    }
+    /* Remove extra left and right margins, due to padding in columns */
+    
+    .row {
+        margin: 0 -5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* Style the counter cards */
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.61);
+        /* this adds the "card" effect */
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        margin: 50px;
+        display: table;
+        opacity: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 300ms ease-in-out;
+        background-color: white;
+    }
+    
+    .card-large {
+        box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.61);
+        /* this adds the "card" effect */
+        height: 250px;
+        width: 500px;
+        border-radius: 10px;
+        margin: 40px;
+        display: table;
+        opacity: 80%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 300ms ease-in-out;
+        background-color: white;
+    }
+    
+    .card-large:hover {
+        opacity: 100%;
+        transform: scale(1.2);
+        transition: 300ms ease-in-out;
+    }
+    
+    .card:hover {
+        opacity: 100%;
+        transform: scale(1.2);
+        transition: 300ms ease-in-out;
+    }
+    
+    .cardCoverLarge {
+        position: absolute;
+        vertical-align: middle;
+        top: 0%;
+        width: inherit;
+        height: inherit;
+        vertical-align: middle;
+        background: linear-gradient(45deg, rgba(132, 133, 134, 0.800), rgba(60, 65, 71, 0.800));
+        border-radius: inherit;
+        visibility: hidden;
+        color: white;
+        opacity: 0%;
+        transition: 300ms ease-in-out;
+        pointer-events: none;
+    }
+    
+    .cardCover {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        background: linear-gradient(45deg, rgba(132, 133, 134, 0.95), rgba(60, 65, 71, 0.95));
+        border-radius: inherit;
+        visibility: hidden;
+        color: white;
+        opacity: 0%;
+        transition: 300ms ease-in-out;
+    }
+    
+    .card-large:hover>.cardCoverLarge {
+        transition: 300ms ease-in-out;
+        visibility: visible;
+        opacity: 100%;
+    }
+    
+    .card:hover>.cardCover {
+        transition: 300ms ease-in-out;
+        visibility: visible;
+        opacity: 100%;
+    }
+    /* Responsive columns - one column layout (vertical) on small screens */
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    
+    section {
+        padding-bottom: 100px;
+    }
+    
+    #title {
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: black;
+    }

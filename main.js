@@ -4,28 +4,40 @@ document.getElementById("github").onclick = () => {
 document.getElementById("linkedIn").onclick = () => {
     window.open("https://www.linkedin.com/in/hakan-tekin", "_blank");
 }
-
+document.getElementById("gmail").onclick = () => {
+    window.location = "mailto: hakan.ahmet.tekin@gmail.com";
+}
 
 document.onload = start();
 
 function start() {
-    var videoElementParents = document.getElementsByClassName("card-large");
-    for (var item of videoElementParents) {
-        item.onmouseover = () => {
-            var videos = item.getElementsByTagName("video");
-            for (var v of videos) {
-                v.play();
-            }
-        };
-
-        item.onmouseout = () => {
-            var videos = item.getElementsByTagName("video");
-            for (var v of videos) {
-                v.pause();
-                v.currentTime = 0;
-            }
-        };
-
+    var mariovsky = document.getElementById("mariovsky");
+    mariovsky.onmouseover = () => {
+        var vid = mariovsky.getElementsByTagName("video");
+        for (x of vid) {
+            x.play();
+        }
+    }
+    mariovsky.onmouseout = () => {
+        var vid = mariovsky.getElementsByTagName("video");
+        for (x of vid) {
+            x.pause();
+            x.currentTime = 0;
+        }
+    }
+    var cityscape = document.getElementById("cityscape");
+    cityscape.onmouseover = () => {
+        var vid = cityscape.getElementsByTagName("video");
+        for (x of vid) {
+            x.play();
+        }
+    }
+    cityscape.onmouseout = () => {
+        var vid = cityscape.getElementsByTagName("video");
+        for (x of vid) {
+            x.pause();
+            x.currentTime = 0;
+        }
     }
 }
 
