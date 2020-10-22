@@ -17,7 +17,7 @@ section{
 }
 
 p{
-    width: 500px;
+    padding-right: 10%;
 }
 .mainSection{
     border-style: dashed;
