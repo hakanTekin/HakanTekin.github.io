@@ -1,5 +1,5 @@
 document.getElementById("github").onclick = () => {
-    window.open("", "_blank");
+    window.open("https://github.com/hakanTekin", "_blank");
 };
 document.getElementById("linkedIn").onclick = () => {
     window.open("https://www.linkedin.com/in/hakan-tekin", "_blank");
@@ -12,17 +12,35 @@ document.onload = start();
 function start() {
     var mariovsky = document.getElementById("mariovsky");
     var cityscape = document.getElementById("cityscape");
+    var chronopath = document.getElementById("chronopath");
 
     var m_vids = mariovsky.getElementsByTagName("video");
     var cs_vids = cityscape.getElementsByTagName("video");
+    var ch_vids = chronopath.getElementsByTagName("video");
 
     for (x of m_vids) {
         x.play();
     }
 
+    for (x of ch_vids) {
+        x.play();
+    }
     
     for (x of cs_vids) {
         x.play();
+    }
+
+    chronopath.onmouseover = () => {
+        for (x of ch_vids) {
+            x.pause();
+        }
+    }
+
+    chronopath.onmouseout = () => {
+        for (x of  ch_vids) {
+            x.play();
+           
+        }
     }
 
     mariovsky.onmouseover = () => {
@@ -34,7 +52,7 @@ function start() {
     mariovsky.onmouseout = () => {
         for (x of  m_vids) {
             x.play();
-            x.currentTime = 0;
+           
         }
     }
    
@@ -48,7 +66,7 @@ function start() {
     cityscape.onmouseout = () => {
         for (x of cs_vids) {
             x.play();
-            x.currentTime = 0;
+           
         }
     }
 
@@ -88,4 +106,20 @@ cityscape.onclick = () =>{
 }
 mariovsky.onclick = () =>{
     window.location.href = "projectPages/mariovsky/mariovsky.html"
+}
+
+var isLightOpen = true;
+
+var githubElement = document.getElementById("github");
+
+function toggleTheme() {
+        
+    var theme = document.getElementsByTagName('link')[0];
+        if(theme.getAttribute('href') == 'main.css'){
+            theme.setAttribute('href','main-dark.css');
+            githubElement.setAttribute("src", "images\\GitHubLogoLight.png")
+        }else{
+            theme.setAttribute('href','main.css');
+            githubElement.setAttribute("src", "images\\GitHubLogo.png")
+        }
 }

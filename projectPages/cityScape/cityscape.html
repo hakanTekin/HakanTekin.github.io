@@ -1,6 +1,57 @@
 <html>
     <body>
         <h1>CityScape</h1>
+        <section id="mainSection">
+            <section id="description">
+                <h2 class="sectionHeader">Description</h2>
+                <p>
+                    CityScape is a 3D Action/Adventure game made with UnrealEngine 4. 
+                    The goal of CityScape is to collect the hidden packages and escape from the city.
+                    While you are searching the city, beware of the enemies out to get you, 
+                    they are heavily armed and can put you down fairly easily.
+
+                    The fixer(you) has abilities that will be useful in your adventure. 
+                </p>
+            </section>
+            <section id="codes">
+                <h2 class="sectionHeader">Technical Bits</h2>
+                <section class="subsection" id="worldSection">
+                    <h3>World</h3>
+                    <p>
+                        There are several maps in CityScape and the default map is <b>The City</b>. 
+                        This map uses an asset pack found in UnrealEngine Marketplace (link can be found in GitHub Repostiory Readme file).                         
+                    </p>
+                    <p>
+                        2 types of Package are spawned randomly in the map when the game starts. 
+                        The fake packages will explode when interacted with, 
+                        while the real ones increase the package counter (that is part of the UI).
+                    </p>
+                </section>
+
+                <section class="subsection" id="EnemiesSection">
+                    <h3>Enemies</h3>
+                    <p>
+                        Enemies are created by <b>Patrol Points</b> that are placed in the city. 
+                        When an enemy is created, it searches for the nearest patrol point and moves to it.
+                        After waiting for a variable amount of time, it searches for the next nearest patrol point that is available.
+                        With this algorithm, enemies are distributed evenly among the map for a better experience.
+                    </p>
+                    <p>
+                        A simple AI is made using the <b>Behaviour Trees</b> of UnrealEngine 4. 
+                        The AI supports basic functionalities such as navigation, searching for enemies and atackking.
+                    </p>
+
+                </section>
+
+                <section class="subsection" id="CharacterSection">
+                    <h3>Character</h3>
+                </section>
+            </section>
+            <section id="gallery">
+                <h2 class="sectionHeader">Gallery</h2>
+            </section>
+         
+        </section>
     </body>
     <head>
         <meta charset='utf-8'>

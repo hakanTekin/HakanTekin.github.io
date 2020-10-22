@@ -16,6 +16,9 @@ section{
     padding: 20px;
 }
 
+p{
+    width: 500px;
+}
 .mainSection{
     border-style: dashed;
     border-radius: 5;
@@ -31,4 +34,20 @@ section{
     align-items: center;
     text-align: center;
     font-size: x-large;
+}
+.subsection{
+    margin: 5% 2% 5% 2%;
+}
+
+.subsection > h3{
+    font-size: x-large;
+    color:white;
+    background: linear-gradient(90deg, #111111, #ffffff);
+    padding: 2%;
+    text-align: left;
+}
+
+li{
+    padding: 5px;
+    margin-top: 10px;
 }

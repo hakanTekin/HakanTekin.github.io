@@ -3,15 +3,30 @@
 
 <body>
     <div style="text-align: center;" id=intro>
-        <div id=title>
-            <h1>Hakan Ahmet Tekin</h1>
-            <h2>Computer Engineering Student</h2>
-            <div id=socialMedias>
-                <input id=github type="image" src="images\GitHubLogo.png"></button>
-                <input id=linkedIn type="image" src="images\LinkedInLogo.png"></button>
-                <input id=gmail type="image" src="images/GmailLogopng.png"></button>
+        <div class="navbar">
+            <div>
+            <a href="#projects">Projects</a>
+            <a href="#jobexperience">Job Experience</a>
+            <a href="#school">Education</a>
+            </div>
+            <div id="settings">
+                <label id = "switch" class ="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider" checked>`
+                    <span class="slider round"></span>
+                </label>
             </div>
         </div>
+        <header style="margin-top: 5%;">
+            <div id=title>
+                <h1>Hakan Ahmet Tekin</h1>
+                <h2>Computer Engineering Student</h2>
+                <div id=socialMedias>
+                    <input id=github type="image" src="images\GitHubLogo.png"></button>
+                    <input id=linkedIn type="image" src="images\LinkedInLogo.png"></button>
+                    <input id=gmail type="image" src="images/GmailLogopng.png"></button>
+                </div>
+            </div>
+        </header>
     </div>
     <div id=aboutMe>
         <section id=projects style="text-align: center;">
@@ -23,7 +38,7 @@
                  <!--ChronoPath-->
                  <div class="card-large" id="chronopath">
                     <video class=" videoContainer " muted loop>
-                        <source src="videos/VladimirMariovskyVideo.mp4">
+                        <source src="videos/ChronoPathTrailer.mp4">
                             Video is not supported
                     </video>
                     <div class="cardCoverLarge" id = "chronopathcover">
@@ -34,7 +49,7 @@
                                 2D Platformer<br>Unity3D
                             </p>
                             <p>
-                                You can manipulate time to alter the world around you. When sun goes down, its game over. Try to beat your best score in this endless runner.
+                                You can manipulate time to alter the world around you. When sun goes down, its game over. Try to survive as long as you can in this endless runner.
                             </p>
                         </p>
                     </div>
@@ -42,7 +57,7 @@
                 <!--CityScape-->
                 <div class="card-large" id="cityscape">
                     <video class=" videoContainer " muted loop>
-                        <source src="videos/VladimirMariovskyVideo.mp4">
+                        <source src="videos/CityScapeTrailer.mp4">
                             Video is not supported
                     </video>
                     <div class="cardCoverLarge " id = "cityscapecover">
