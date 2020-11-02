@@ -61,3 +61,12 @@ li{
     height: auto;
     width: 50%;
 }
+
+videowrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+video{
+    width: 70%;
+}
